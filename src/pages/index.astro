@@ -43,54 +43,52 @@ import { Image } from "astro:assets";
       >
         <span
           >Tengo 21 años, apasionado por el Desarrollo Web y todo lo relacionado
-          al mundo Tech. Soy de <span
-            class="text-yellow-800 dark:text-yellow-200"
-          >
-            Barranquilla, Colombia</span
-          >
-          y creo firmemente en el aprendizaje continuo y en la colaboracion.
-        </span>
-
-        <nav id="contacto" class="flex gap-4 mt-8 flex-wrap">
-          <SocialPill href="https://linkedin.com/in/juan-josé-villar-08853623b">
-            <LinkedInIcon class="size-4 md:size-6" />
-            LinkedIn
-          </SocialPill>
-          <SocialPill href="https://github.com/Juanvillar07">
-            <GitHubIcon class="size-4 md:size-6" />
-            GitHub
-          </SocialPill>
-          <SocialPill href="mailto:jvillar747@gmail.com">
-            <MailIcon class="size-4 md:size-6" />
-            jvillar747@gmail.com
-          </SocialPill>
-          <SocialPill download="curriculum" href={Archivo}>
-            <DownloadIcon class="size-4 md:size-6" />
-            Descargar CV
-          </SocialPill>
-        </nav>
+          al mundo Tech. Soy de</span
+        ><span class="text-yellow-800 dark:text-yellow-200">
+          Barranquilla - Colombia</span
+        >, creo firmemente en el aprendizaje continuo y en la colaboracion.
       </h2>
 
-      <SectionContainer id="experiencia">
-        <h2
-          class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
-        >
-          <Briefcase class="size-7" />
-          Experiencia laboral
-        </h2>
-        <Experience />
-      </SectionContainer>
+      <nav id="contacto" class="flex gap-4 mt-8 flex-wrap">
+        <SocialPill href="https://linkedin.com/in/juan-josé-villar-08853623b">
+          <LinkedInIcon class="size-4 md:size-6" />
+          LinkedIn
+        </SocialPill>
+        <SocialPill href="https://github.com/Juanvillar07">
+          <GitHubIcon class="size-4 md:size-6" />
+          GitHub
+        </SocialPill>
+        <SocialPill href="mailto:jvillar747@gmail.com">
+          <MailIcon class="size-4 md:size-6" />
+          jvillar747@gmail.com
+        </SocialPill>
+        <SocialPill download="curriculum" href={Archivo}>
+          <DownloadIcon class="size-4 md:size-6" />
+          Descargar CV
+        </SocialPill>
+      </nav>
+    </SectionContainer>
 
-      <SectionContainer id="educacion">
-        <h2
-          class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
-        >
-          <EducationIcon class="size-7" />
-          Educacion
-        </h2>
-        <Educacion />
-      </SectionContainer>
-      <!-- <SectionContainer id="proyectos">
+    <SectionContainer id="experiencia">
+      <h2
+        class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
+      >
+        <Briefcase class="size-7" />
+        Experiencia laboral
+      </h2>
+      <Experience />
+    </SectionContainer>
+
+    <SectionContainer id="educacion">
+      <h2
+        class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
+      >
+        <EducationIcon class="size-7" />
+        Educacion
+      </h2>
+      <Educacion />
+    </SectionContainer>
+    <!-- <SectionContainer id="proyectos">
       <h2
         class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
       >
@@ -99,6 +97,5 @@ import { Image } from "astro:assets";
       </h2>
       <Projects />
     </SectionContainer> -->
-    </SectionContainer>
   </main>
 </Layout>

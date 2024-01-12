@@ -13,7 +13,7 @@
     d="M14 4l-4 16"></path>
     <style>
         svg { color: #000; }
-        @media (prefers-color-scheme: dark) {
+        @media (prefers-color-scheme: white) {
             svg { color: #FFF; }
         }
     </style>

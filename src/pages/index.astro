@@ -68,8 +68,7 @@ import { Image } from "astro:assets";
         </SocialPill>
       </nav>
     </SectionContainer>
-
-    <SectionContainer id="experiencia">
+    <!-- <SectionContainer id="experiencia">
       <h2
         class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
       >
@@ -77,15 +76,24 @@ import { Image } from "astro:assets";
         Experiencia laboral
       </h2>
       <Experience />
+    </SectionContainer> -->
+    <SectionContainer
+      class="w-full lg:w-[780px] mx-auto mt-8 sm:px-10 px-6"
+      id="experiencia"
+    >
+      <Experience />
     </SectionContainer>
 
-    <SectionContainer id="educacion">
-      <h2
+    <SectionContainer
+      class="w-full lg:w-[780px] -mt-24 mx-auto sm:px-10 px-2"
+      id="educacion"
+    >
+      <!-- <h2
         class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
       >
         <EducationIcon class="size-7" />
         Educacion
-      </h2>
+      </h2> -->
       <Educacion />
     </SectionContainer>
     <!-- <SectionContainer id="proyectos">

@@ -4,9 +4,10 @@ interface Props {
   description: string;
   link?: string;
   date: string;
+  empresa: string;
 }
 
-const { title, description, link, date } = Astro.props;
+const { title, description, link, date, empresa } = Astro.props;
 ---
 
 <div
@@ -26,6 +27,7 @@ const { title, description, link, date } = Astro.props;
 {
   link && (
     <a
+      target="_blank"
       href={link}
       class="bg-white/5 
     border dark:border-white/10 border-gray-300
@@ -36,7 +38,7 @@ const { title, description, link, date } = Astro.props;
     transition
     hover:scale-110 hover:bg-white/10"
     >
-      Clinica general del norte...{" "}
+      {empresa}...{" "}
       <svg
         class="w-3 h-3 ms-2 rtl:rotate-180"
         aria-hidden="true"

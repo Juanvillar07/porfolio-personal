@@ -1,0 +1,22 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCIE = [
+  {
+    date: "Febrero 2023 - Octubre 2023",
+    title: "Practicante de Desarrollo Web - Clinica General del norte",
+    description:
+      "Durante mi periodo de prácticas en la Clínica General del Norte, estuve en el equipo de desarrollo, centrándome en la creación de aplicaciones, la generación de informes y la prestación de soporte técnico. Mi enfoque se centró principalmente en tecnologías clave como .NET Core, JavaScript y SQL Server.  ",
+    link: "https://www.clinicageneraldelnorte.com/",
+  },
+];
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>

@@ -1,0 +1,26 @@
+---
+import EducacionItem from "./EducacionItem.astro";
+const EXPERIENCIE = [
+  {
+    date: "Actualmente...",
+    title: "Ingenería de sistemas",
+    description: "Corporacion Universitaria Latinoamericana (CUL)",
+    link: "https://ul.edu.co/",
+  },
+  {
+    date: "Febrero 2022 - Diciembre 2022",
+    title: "Tecnico en Programacion de software",
+    description: "SENA Colombo Alemán",
+  },
+];
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+  {
+    EXPERIENCIE.map((educacion) => (
+      <li class="mb-10 ms-4">
+        <EducacionItem {...educacion} />
+      </li>
+    ))
+  }
+</ol>
